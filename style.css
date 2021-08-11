@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+.city {
+  height: 100vh;
+  width: 600%;
+  background-image: url(city.jpg);
+  background-repeat: repeat-x;
+  /* background-size: cover; */
+  position: absolute;
+
+  animation: city 8s linear infinite;
+}
+
+@keyframes city {
+  100% {
+    transform: translateX(-500px);
+  }
+}
+@keyframes track {
+  100% {
+    transform: translateX(-500px);
+  }
+}
+
+.track {
+  position: absolute;
+  background-image: url(track2.jpeg);
+  background-repeat: repeat-x;
+  height: 40vh;
+  width: 100%;
+  top: 481px;
+  animation: track 1s linear infinite;
+}
+.track1 {
+  position: absolute;
+  background-image: url(track.png);
+  background-repeat: repeat-x;
+  height: 40vh;
+  width: 100%;
+  top: 620px;
+  animation: track .8s linear infinite;
+}
+.track2 {
+  position: absolute;
+  background-image: url(track.png);
+  background-repeat: repeat-x;
+  height: 40vh;
+  width: 100%;
+  top: 748px;
+  animation: track .8s linear infinite;
+}
+
+.train img{
+    position: fixed;
+    top: 49vh;
+    height: 15vh;
+    left: 26vw;
+    width: 40vw;
+    animation: train 1s linear infinite;
+}
+
+@keyframes train {
+    0%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+}
+
+.car img{
+    position: fixed;
+    top: 69vh;
+    left: 10vw;
+    width: 26vw;
+    height: 14vh;
+    animation: train 4s linear infinite;
+}
+
+.backwheel img{
+    position: fixed;
+    top: 74vh;
+    left: 13vw;
+    width: 5vw;
+    height: 12vh;
+    animation: rotatewheel .3s linear infinite;
+}
+.frontwheel img{
+    position: fixed;
+    top: 74vh;
+    left: 26vw;
+    width: 6vw;
+    height: 12vh;
+    animation: rotatewheel .3s linear infinite;
+}
+
+@keyframes rotatewheel {
+    100%{
+        transform: rotate(360deg);
+    }
+}
